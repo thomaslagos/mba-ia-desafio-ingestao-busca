@@ -27,6 +27,7 @@ Projeto desenvolvido para o desafio do MBA com os requisitos de:
     ├── ingest.py
     ├── search.py
     └── chat.py
+```
 
 ## Pré-requisitos
 Antes de executar, é necessário ter instalado:
@@ -34,20 +35,26 @@ Python 3.11
 Docker Desktop
 Git
 
-##Configuração do ambiente
+## Configuração do ambiente
 
 1. Clonar o repositório
+```text
 git clone https://github.com/SEU_USUARIO/mba-ia-desafio-ingestao-busca.git
 cd mba-ia-desafio-ingestao-busca
+```
 
 2. Criar e ativar o ambiente virtual
+```text
 python3.11 -m venv venv
 source venv/bin/activate
+```
 
 3. Instalar as dependências
+```text
 python -m pip install -r requirements.txt
 python -m pip install truststore
 Configuração das variáveis de ambiente
+```
 
 4. Criar o arquivo .env
 Crie um arquivo .env na raiz do projeto com base no .env.example.
@@ -60,15 +67,21 @@ PDF_PATH=./document.pdf
 Execução do projeto
 
 5. Subir o banco PostgreSQL com pgVector
+```text
 docker compose up -d
+```
 
 6. Executar a ingestão do PDF
+```text
 export SSL_CERT_FILE=$(python -m certifi)
 python src/ingest.py
+```
 
 7. Rodar o chat no terminal
+```text
 export SSL_CERT_FILE=$(python -m certifi)
 python src/chat.py
+```
 
 ## Exemplo de uso
 
