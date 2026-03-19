@@ -85,13 +85,13 @@ python src/chat.py
 
 ## Exemplo de uso
 
-Faça sua pergunta:
-PERGUNTA: Qual o faturamento da Empresa SuperTechIABrazil?
-RESPOSTA: O faturamento foi de 10 milhões de reais.
+Faça sua pergunta:  
+- PERGUNTA: Qual o faturamento da Empresa SuperTechIABrazil?
+- RESPOSTA: O faturamento foi de 10 milhões de reais.
 
-Perguntas fora do contexto:
-PERGUNTA: Quantos clientes temos em 2024?
-RESPOSTA: Não tenho informações necessárias para responder sua pergunta.
+Perguntas fora do contexto:  
+- PERGUNTA: Quantos clientes temos em 2024?
+- RESPOSTA: Não tenho informações necessárias para responder sua pergunta.
 
 ## Observações
 - O projeto responde somente com base no conteúdo do PDF ingerido.
